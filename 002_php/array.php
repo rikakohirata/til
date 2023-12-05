@@ -14,3 +14,15 @@ print_r(array_reverse($samples)); // => [2, 1, 0]
 $words = ['n', 'a', 'm', 'e'];
 var_dump(implode($words));      // => string(4) "name"
 var_dump(implode(",", $words)); // => string(7) "n,a,m,e"
+
+/**
+ * array_fill — 配列を指定した値で埋める, 要素数と値を指定して配列を生成 
+ *  第一引数：配列の要素を始めるインデックスを指定（大抵0）
+ *  第二引数：配列の要素数を指定
+ *  第三引数：要素の値を指定
+ */
+$index = 0;
+$length = 5;
+$value = 1;
+$array = array_fill($index, $length, $value);
+print_r($array); // => [1, 1, 1, 1, 1]
