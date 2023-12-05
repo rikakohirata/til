@@ -1,6 +1,19 @@
 <?php
 
 /**
+ * strpos — 文字列内の部分文字列が最初に現れる場所を見つける
+ */
+$word_1 = 'abcd';
+$word_2 = 'c';
+$word_3 = 'e';
+
+$result = strpos($word_1, $word_2);
+var_dump($result); // => int(2) 存在する場合、見つかった位置を返す
+
+$result = strpos($word_1, $word_3);
+var_dump($result); // bool(false) 存在しない場合、falseを返す
+
+/**
  * strrev — 文字列を逆順にする
  */
 $number = 12321;
