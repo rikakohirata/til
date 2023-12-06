@@ -2,6 +2,7 @@
 
 /**
  * strpos — 文字列内の部分文字列が最初に現れる場所を見つける
+ *  https://www.php.net/manual/ja/function.strpos.php
  */
 $word_1 = 'abcd';
 $word_2 = 'c';
@@ -15,6 +16,7 @@ var_dump($result); // bool(false) 存在しない場合、falseを返す
 
 /**
  * strrev — 文字列を逆順にする
+ *  https://www.php.net/manual/ja/function.strrev.php
  */
 $number = 12321;
 $reverse_number = (int)strrev($number);
@@ -22,6 +24,7 @@ var_dump($number === $reverse_number); // => bool(true)
 
 /**
  * str_split — 文字列を配列に変換する
+ *  https://www.php.net/manual/ja/function.str-split
  */
 $string = "ABCDEF";
 print_r(str_split($string));    // => [A, B, C, D, E, F]
@@ -29,6 +32,7 @@ print_r(str_split($string, 2)); // => [AB, CD, EF]
 
 /**
  * strtr — 文字の変換あるいは部分文字列の置換を行う
+ *  https://www.php.net/manual/ja/function.strtr.php
  *  引数を2つ渡した場合、第一引数の文字列と、第二引数の配列のキーを比較し、一致したキーの値に置換する
  *  第二引数はarray(key => value)形式で渡す
  */
