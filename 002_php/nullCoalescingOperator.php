@@ -55,3 +55,12 @@ $a = $array_2 ?? '初期値';
 $array_2 ??= '初期値';
 var_dump($a);       // => [0]
 var_dump($array_2); // => [0]
+
+/**
+ * Null合体演算子のネスト
+ */
+$a = null;
+$b;
+$c = 0;
+$d = 1;
+var_dump($a ?? $b ?? $c ?? $d); // => 0
