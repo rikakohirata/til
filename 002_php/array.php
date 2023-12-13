@@ -29,3 +29,11 @@ $length = 5;
 $value = 1;
 $array = array_fill($index, $length, $value);
 print_r($array); // => [1, 1, 1, 1, 1]
+
+/**
+ * array_pop — 配列の末尾から要素を取り除く
+ *  https://www.php.net/manual/ja/function.array-pop.php
+ */
+$array = [0, 1, 2, 3, 4];
+array_pop($array);
+print_r($array); // => [0, 1, 2, 3]
