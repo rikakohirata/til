@@ -28,7 +28,7 @@
   - プログラムとは、アルゴリズムに基づき具体的な形（目に見えるもの）に表したもの
   - アルゴリズムの概念は 3000 年以上の歴史がるに対して、プログラムの概念は 200 年程度の歴史である
 
-    <img src="image-1.png" width="300">
+    <img src="images/image-1.png" width="300">
 
 - Tips
 
@@ -56,7 +56,7 @@
 
     - A0 ～ A9 まで 10 本のピンがあり、これらのピンによってデータを保存する
 
-    <img src="image-2.png" width="300">
+    <img src="images/image-2.png" width="300">
 
 - メモリ IC の論理的な仕組み
 
@@ -65,7 +65,7 @@
 
     - 例）4 バイトの int 型のデータを保存する
 
-      <img src="image-3.png" width="300">
+      <img src="images/image-3.png" width="300">
 
 ### データ構造
 
@@ -89,7 +89,7 @@
 
     - 例）\*p の中に num のアドレスが入っていて、そこを辿り値を取得する
 
-    <img src="image-6.png" width="300">
+    <img src="images/image-6.png" width="300">
 
 ### 連結リスト
 
@@ -101,7 +101,7 @@
 
   ○ 追加や削除などデータの移動が柔軟にできる
 
-    <img src="image-5.png" width="300">
+    <img src="images/image-5.png" width="300">
 
 ### 配列
 
@@ -113,4 +113,4 @@
 
   × 全ての要素が連続した位置にある必要があるため、データの移動や変更が容易でない
 
-  <img src="image-7.png" width="300">
+  <img src="images/image-7.png" width="300">
