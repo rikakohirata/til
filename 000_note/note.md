@@ -207,7 +207,7 @@
   - エラトステネスのふるい（アルゴリズム）を用いて求める
 
       <img src="images/image-9.png" width="300">
-
+      <br>
       <img src="images/image-10.png" width="300">
 
 - Tips
