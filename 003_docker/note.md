@@ -9,7 +9,7 @@
 
     - Docker の管理下（固定）でストレージ領域を確保する
     - Linux の場合、/var/lib/docker/volumes 以下をコンテナから参照する
-    - 他：volume, tmpfs mount
+    - 他：[volume](#バインドマウント---bind-mounts), tmpfs mount
 
       <img src="images/image-2.png" width="300">
 
@@ -64,3 +64,14 @@
     ```bash
     docker volume prune
     ```
+
+### バインドマウント - Bind mounts
+
+> https://docs.docker.com/storage/bind-mounts/
+
+- ホストマシン上のディレクトリをコンテナ内のディレクトリと共有する
+
+  × ホストマシンのディレクトリ構造と OS に依存する<br>
+  × ボリュームに比べて機能が制限されている
+
+  <img src="images/image-1.png" width="300">
