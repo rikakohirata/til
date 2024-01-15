@@ -75,3 +75,15 @@
   × ボリュームに比べて機能が制限されている
 
   <img src="images/image-1.png" width="300">
+
+### PHP イメージの種類
+
+- php:<バージョン>-apache
+  - PHP と Apache を組み合わせた Web アプリケーションを作成したい
+- php:<バージョン>-fpm
+  - PHP-FPM を使用して PHP と web サーバー（Apache 以外 Nginx 等）と組み合わせた Web アプリケーションを作成したい
+- php:<バージョン>-cli
+  - コマンドラインスクリプトを実行するための PHP 環境が欲しい
+  - 独自の PHP スクリプトやツールを作成したいなど
+- php:<バージョン>-alpine
+  - Alpine Linux ベースの軽量な PHP 環境が欲しい
