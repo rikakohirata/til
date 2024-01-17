@@ -1,3 +1,18 @@
+### Dockerfile
+
+- 書式
+
+  - 命令は、慣習的に大文字で書く
+  - 必ず `FROM` 命令から始める
+
+  ```text
+  # コメント
+  命令 引数
+
+  # 環境変数
+  $variable_name または ${variable_name}
+  ```
+
 ### ボリューム - Volumes
 
 > https://docs.docker.com/storage/volumes/
