@@ -1,5 +1,15 @@
 ### Dockerfile
 
+> https://docs.docker.jp/engine/reference/builder.html
+
+- 概要
+
+  - Docker は、Dockerfile の命令を読み込み、自動的にイメージを構築する
+
+- ベストプラクティス
+
+  > https://docs.docker.jp/engine/userguide/eng-image/dockerfile_best-practice.html
+
 - 書式
 
   - 命令は、慣習的に大文字で書く
