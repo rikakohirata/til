@@ -23,6 +23,61 @@
   $variable_name または ${variable_name}
   ```
 
+- 命令
+
+  - FROM
+
+    - 構築時の元となる親イメージを指定
+
+  - RUN
+
+    - 2 つの形式
+
+      ```text
+      # シェル形式
+      RUN <コマンド>
+
+      # 実行形式
+      RUN ["実行ファイル", "パラメータ1", "パラメータ2"]
+      ```
+
+    - シェル形式で `\` を使うと、 RUN 命令を継続できる
+
+      ```text
+      RUN /bin/bash -c 'source $HOME/.bashrc ;\
+          echo $HOME'
+
+      # 上記と等しい
+      RUN /bin/bash -c 'source $HOME/.bashrc ; echo $HOME'
+
+      # 実行形式の場合
+      RUN /bin/bash -c 'source $HOME/.bashrc ; echo $HOME'
+      ```
+
+  - CMD
+
+    - 実行形式で命令するのが望ましい
+
+      ```text
+      CMD ["実行ファイル","パラメータ1","パラメータ2"]
+      ```
+
+    - CMD 命令は、Dockerfile 中で１度しか使えない
+
+      - 複数の CMD 命令が存在する場合、最後の CMD 命令のみ実行される
+
+    - 目的
+
+      - コンテナ実行時の初期設定を指定する
+
+  - WORKDIR
+
+    - 命令を実行する作業ディレクトリを指定する
+      - 指定したディレクトリが存在しなければ、作成される
+      ```text
+      WORKDIR /path/to/workdir
+      ```
+
 ### ボリューム - Volumes
 
 > https://docs.docker.com/storage/volumes/
