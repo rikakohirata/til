@@ -15,13 +15,13 @@
   - 命令は、慣習的に大文字で書く
   - 必ず `FROM` 命令から始める
 
-  ```text
-  # コメント
-  命令 引数
+    ```text
+    # コメント
+    命令 引数
 
-  # 環境変数
-  $variable_name または ${variable_name}
-  ```
+    # 環境変数
+    $variable_name または ${variable_name}
+    ```
 
 - 命令
 
@@ -73,7 +73,9 @@
   - WORKDIR
 
     - 命令を実行する作業ディレクトリを指定する
+
       - 指定したディレクトリが存在しなければ、作成される
+
       ```text
       WORKDIR /path/to/workdir
       ```
